@@ -1,8 +1,91 @@
 body {
-    background-color: #000000;
+    background-color: #fae2e2;
     font-family: unispace , Arial;
+    margin: 0;
+    padding: 0;
 }
 .txt {
     color: #ffffff;
     text-align: center;
+}
+nav {
+    background: linear-gradient(to bottom, #ff8080, #fae2e2);
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start; /* จัดตำแหน่งรายการไปทางซ้าย */
+}
+
+nav li {
+    margin-right: 10px;
+}
+
+nav li:last-child {
+    margin-right: 0; /* ลบระยะห่างของรายการสุดท้าย */
+}
+
+nav .link {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+    border-radius: 50px; /* ทำให้มุมของปุ่มดูโค้งมน */
+    background-color: #c2c2c2;
+}
+
+nav a:hover {
+    background-color: #ffc7c7;
+}
+img {
+    width: 115px; /* ปรับขนาดของโลโก้ */
+    height: 40px;
+    vertical-align: middle; /* จัดแนวโลโก้ให้อยู่กึ่งกลาง */
+    
+}
+
+.dropdown-content {
+    display: none; /* ซ่อนเมนูย่อยไว้ก่อน */
+    position: absolute; /* จัดตำแหน่งเมนูย่อย */
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+    top: 100%; /* จัดตำแหน่งให้ Dropdown อยู่ด้านล่างปุ่มหลักพอดี */
+    left: 0;
+}
+
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    background-color: #f9f9f9;
+    border-radius: 0; /* ลบขอบมนออก */
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* เมื่อเอาเมาส์ไปชี้ที่เมนูหลัก Dropdown จะแสดงขึ้นมา */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropbtn {
+    /* สไตล์ของปุ่มหลักในเมนู Dropdown */
+    background-color: #4CAF50; /* สีเขียว */
+}
+
+.dropbtn:hover {
+    background-color: #3e8e41;
 }
