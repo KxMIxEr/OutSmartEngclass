@@ -1,0 +1,22 @@
+body { 
+    background-color: #1c1c1c;
+    font-family: unispace , arial;
+}
+.nav-link  {
+    color: #ffffff;     
+}
+.txt {
+    color: #ffffff;
+}
+.navbar .dropdown-toggle::after {
+    display: none !important;
+}
+
+.dropdown-menu {
+    background: linear-gradient(to bottom, #ac1b1b, rgb(235, 158, 158));
+    border: none;
+}
+.dropdown-menu .dropdown-item:hover {
+    background: #482929;
+    color: #ffffff;
+}
